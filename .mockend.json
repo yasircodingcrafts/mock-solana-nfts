@@ -1,4 +1,18 @@
 {
+  "User": {
+    "name": { "regexp": "[A-Z][a-z]{5,10}" },
+    "avatar": {
+      "regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"
+    },
+    "totalSpend": { "int": { "min": 0, "max": 1000000 } },
+    "totalProfits": { "int": { "min": -1000000, "max": 1000000 } },
+    "currentNFTs": {
+      "hasMany": "Nft"
+    },
+    "tradedNFTs": {
+      "hasMany": "Nft"
+    }
+  },
   "Nft": {
     "name": { "regexp": "[A-Z][a-z]{5,10}" },
     "tradeType": { "string": ["default", "transfer", "mint", "airdrop"] },
