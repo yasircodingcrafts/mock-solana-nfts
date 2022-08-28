@@ -13,10 +13,10 @@
       "hasMany": "Nft"
     },
     "titles": {
-      "hasMany": "title"
+      "hasMany": "Title"
     }
   },
-  "title": {
+  "Title": {
     "name": { "regexp": "[A-Z][a-z]{5,10}" },
     "date": {
       "dateTime": {
@@ -47,6 +47,9 @@
         "max": "2020-12-31T23:59:59Z"
       }
     },
-    "profits": { "int": { "min": -1000000, "max": 1000000 } }
+    "profits": { "int": { "min": -1000000, "max": 1000000 } },
+    "titles": {
+      "hasMany": "Title"
+    }
   }
 }
