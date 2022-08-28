@@ -1,5 +1,5 @@
 {
-  "NFTs": {
+  "Nfts": {
     "name": { "regexp": "[A-Z][a-z]{5,10}" },
     "tradeType": { "string": ["default", "transfer", "mint", "airdrop"] },
     "photo": {
