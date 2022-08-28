@@ -6,30 +6,5 @@
     },
     "totalSpend": { "int": { "min": 0, "max": 1000000 } },
     "totalProfits": { "int": { "min": -1000000, "max": 1000000 } }
-  },
-  "NFTs": {
-    "name": { "regexp": "[A-Z][a-z]{5,10}" },
-    "tradeType": { "string": ["default", "transfer", "mint", "airdrop"] },
-    "photo": {
-      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
-    },
-    "entryPrice": { "int": { "min": 0, "max": 1000000 } },
-    "entryGasPrice": { "int": { "min": 0, "max": 1000000 } },
-    "entryDate": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
-    },
-    "exitValue": { "int": { "min": 0, "max": 1000000 } },
-    "exitGasPrice": { "int": { "min": 0, "max": 1000000 } },
-    "exitDate": {
-      "dateTime": {
-        "min": "2010-01-01T00:00:00Z",
-        "max": "2020-12-31T23:59:59Z"
-      }
-    },
-    "profits": { "int": { "min": -1000000, "max": 1000000 } },
-    "belongsTo": "User"
   }
 }
