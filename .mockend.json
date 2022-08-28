@@ -5,13 +5,7 @@
       "regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"
     },
     "totalSpend": { "int": { "min": 0, "max": 1000000 } },
-    "totalProfits": { "int": { "min": -1000000, "max": 1000000 } },
-    "currentNFTs": {
-      "hasMany": "NFTs"
-    },
-    "tradedNFTs": {
-      "hasMany": "NFTs"
-    }
+    "totalProfits": { "int": { "min": -1000000, "max": 1000000 } }
   },
   "NFTs": {
     "name": { "regexp": "[A-Z][a-z]{5,10}" },
